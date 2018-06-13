@@ -27,7 +27,7 @@
 
         document.onkeyup = function(event) {
 
-            let userGuess = String.fromCharCode(event.onkeyup).toLowerCase();
+            let userGuess = event.key;
             console.log(userGuess);
 
             if (guessesSoFar.indexOf(userGuess) < 0 && computerChoices.indexOf(userGuess) >= 0) {
